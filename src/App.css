@@ -1,0 +1,124 @@
+/* Background */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Card */
+  .card {
+    background: #fff;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Textarea */
+  .textarea {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    transition: border 0.3s;
+    margin-bottom: 15px;
+  }
+  
+  .textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+  
+  /* Button */
+  .button {
+    background: linear-gradient(90deg, #6366f1, #9333ea);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 60%;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button.disabled {
+    background: #d1d5db;
+    color: #6b7280;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  /* Error */
+  .error {
+    color: crimson;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  /* Result Box */
+  .result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .label-fake {
+    color: #ef4444;
+  }
+  
+  .label-real {
+    color: #10b981;
+  }
+  
+  .score {
+    font-family: monospace;
+    color: #6366f1;
+    font-weight: 600;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
